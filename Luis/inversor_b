@@ -2,7 +2,7 @@
 * Parameters and models
 *----------------------------------------------------------------------
 .param H=4
-.temp 25
+.param F=2
 .lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Sulecio_Hidalgo_I_2024_vlsi/tarea1/Hspice/lp5mos/xt018.lib' tm
 .lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Sulecio_Hidalgo_I_2024_vlsi/tarea1/Hspice/lp5mos/param.lib' 3s
 .lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Sulecio_Hidalgo_I_2024_vlsi/tarea1/Hspice/lp5mos/config.lib' default
@@ -11,7 +11,7 @@
 *----------------------------------------------------------------------
 * Subcircuits
 *----------------------------------------------------------------------
-.subckt inv a y WN=220n WP=440n
+.subckt inv a y WN=220n WP=F*220n
 xm0 y a gnd gnd ne W='WN' L=180n
 + as=-1 ad=-1 ps=-1 + pd=-1 nrs=-1 nrd=-1 m='(1*1)' par1='(1*1)' xf_subext=0
 xm1 y a vdd vdd pe W='WP' L=180n
