@@ -1,4 +1,4 @@
 $DATA1 SOURCE='PrimeSim HSPICE' VERSION='U-2023.03-SP2 linux6' PARAM_COUNT=0
 .TITLE '*----------------------------------------------------------------------'
  tpdr             tpdf             temper           alter#          
-  1.236e-10        7.275e-11         25.0000        1               
+  1.160e-10        1.157e-10         25.0000        1               
