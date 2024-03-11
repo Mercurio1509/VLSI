@@ -1,0 +1,22 @@
+* mosiv.sp
+*----------------------------------------------------------------------
+* Parameters and models
+*----------------------------------------------------------------------
+.lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Leiva_Solano_I_2024_vlsi/tutorial//Hspice/lp5mos/xt018.lib' tm
+.lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Leiva_Solano_I_2024_vlsi/tutorial/Hspice/lp5mos/param.lib' 3s
+.lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Rodiguez_Solano_I_2024_vlsi/tutorial/Hspice/lp5mos/config.lib' default
+.temp 25
+.option post
+*----------------------------------------------------------------------
+* Simulation netlist
+*----------------------------------------------------------------------
+*nmos
+Vgs g gnd 0
+Vds d gnd 0
+xm1 d g gnd gnd ne W=220n L=180n
+*----------------------------------------------------------------------
+* Stimulus
+*----------------------------------------------------------------------
+.tran 10p 10n
+.dc Vds 0 7 0.1 SWEEP Vgs 0 5 1
+.end

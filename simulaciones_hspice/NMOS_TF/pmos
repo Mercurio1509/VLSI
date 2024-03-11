@@ -1,0 +1,25 @@
+* pmos_iv_01.sp
+
+*.lib 'hspice.lib' tt
+*.PARAM
+.OPTION POST
+*.GLOBAL gnd! vdd!
+
+Vgs g vdd! 0
+Vds d vdd! 0
+
+M1 d g vdd! vdd! Pch W=0.44um L=0.18um
+
+* MOS Model
+.model Pch PMOS level=1
+
+Vvdd vdd! 0 1.8v
+Vgnd gnd! 0 0v
+
+.DC Vds -1.8 0 0.05 SWEEP Vgs -1.8 0 0.3
+
+.PROBE DC i(M1)
+
+.end
+
+

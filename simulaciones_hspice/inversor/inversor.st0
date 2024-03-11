@@ -1,0 +1,54 @@
+****** PrimeSim HSPICE -- U-2023.03-SP2 linux64 (Aug 24 2023 8388748) ******
+Input File: inversor
+lic:
+lic: FLEXlm: SDK_12.11.9.1
+lic: USER:   Leiva_Solano_I_2024_vlsi HOSTNAME: redhat003
+lic: HOSTID: 7f0100               PID:      589261
+lic: Using FLEXlm license file:
+lic: 27000@172.21.9.211
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 22-oct-2024/2023.03
+lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27000@172.21.9.211
+lic:
+
+ init: begin read circuit files, cpu clock= 6.78E+00
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/ad
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/behave
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/bjt
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/burr_brn
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/comlinear
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/dio
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/fet
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/lin_tech
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/pci
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/signet
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/ti
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/tline
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/xilinx
+       option scale =     90.0
+       option parhier = local
+       option post
+ init: end read circuit files, cpu clock= 6.79E+00 peak memory=     513 mb
+ init: begin check errors, cpu clock= 6.79E+00
+ init: end check errors, cpu clock= 6.80E+00 peak memory=     514 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 6.80E+00
+       establish matrix -- done, cpu clock= 6.80E+00 peak memory=     514 mb
+       re-order matrix -- done, cpu clock= 6.80E+00 peak memory=     514 mb
+ init: end setup matrix, cpu clock= 6.82E+00 peak memory=     514 mb
+ dcop: begin dcop, cpu clock= 6.82E+00
+ dcop: end dcop, cpu clock= 6.84E+00 peak memory=     514 mb tot_iter=       4
+ output: inversor.tr
+ sweep: tran tran0    begin, stop_t=  2.00E-10 #sweeps= 201 cpu clock= 6.85E+00
+ tran: time= 2.5200E-11 tot_iter=       8 conv_iter=       4 cpu clock= 6.85E+00
+ tran: time= 4.5200E-11 tot_iter=      12 conv_iter=       6 cpu clock= 6.85E+00
+ tran: time= 6.6533E-11 tot_iter=      45 conv_iter=      20 cpu clock= 6.85E+00
+ tran: time= 8.6533E-11 tot_iter=      49 conv_iter=      22 cpu clock= 6.85E+00
+ tran: time= 1.0653E-10 tot_iter=      53 conv_iter=      24 cpu clock= 6.85E+00
+ tran: time= 1.2653E-10 tot_iter=      57 conv_iter=      26 cpu clock= 6.85E+00
+ tran: time= 1.4653E-10 tot_iter=      61 conv_iter=      28 cpu clock= 6.85E+00
+ tran: time= 1.6807E-10 tot_iter=      95 conv_iter=      42 cpu clock= 6.85E+00
+ tran: time= 1.8807E-10 tot_iter=      99 conv_iter=      44 cpu clock= 6.85E+00
+ tran: time= 2.0000E-10 tot_iter=     103 conv_iter=      46 cpu clock= 6.85E+00
+ sweep: tran tran0    end, cpu clock= 6.85E+00 peak memory=     514 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

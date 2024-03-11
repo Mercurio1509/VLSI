@@ -1,0 +1,27 @@
+* inv.sp
+*----------------------------------------------------------------------
+* Parameters and models
+*----------------------------------------------------------------------
+.param SUPPLY=1.8
+.option scale=90
+.lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Leiva_Solano_I_2024_vlsi/tutorial/Hspice/lp5mos/xt018.lib' tm
+.lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Leiva_Solano_I_2024_vlsi/tutorial/Hspice/lp5mos/param.lib' 3s
+.lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Leiva_Solano_I_2024_vlsi/tutorial/Hspice/lp5mos/config.lib' default
+.temp 70
+.tf V(y) Vin
+.option post
+*----------------------------------------------------------------------
+* Simulation netlist
+*----------------------------------------------------------------------
+Vdd vdd gnd 'SUPPLY'
+Vin a gnd PULSE 0 'SUPPLY' 50ps 0ps 0ps 100ps 200ps
+xm1 y a gnd gnd ne W=220n L=180n
++ AS=20 PS=18 AD=20 PD=18
+xm2 y a vdd vdd pe W=440n L=180n
++ AS=40 PS=26 AD=40 PD=26
+*----------------------------------------------------------------------
+* Stimulus
+*----------------------------------------------------------------------
+*.TF V(y,a) Vin
+.tran 1ps 200ps
+.end

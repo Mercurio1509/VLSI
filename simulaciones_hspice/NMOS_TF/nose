@@ -1,0 +1,18 @@
+* nmos_iv_02.sp
+
+.OPTION POST
+
+M1 Vd Vg Vs 0 Nch L=180n W=220n
+
+* MOS Model
+.model Nch NMOS level=1
+
+* voltage
+Vds Vd Vs
+Vgs Vg Vs
+
+.DC Vds 0 7 0.1 Vgs 0 5 1
+
+.probe dc i(M1)
+
+.end

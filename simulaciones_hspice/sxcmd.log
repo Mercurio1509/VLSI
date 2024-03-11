@@ -1,0 +1,61 @@
+### Custom WaveView ADV log file, revision U-2023.03-SP2 (build Aug 24, ) ###
+### created at 21:44:55 on Mon Mar  4 2024 (Linux AMD64) ###
+### Host Name: redhat003   User ID: Leiva_Solano_I_2024_vlsi   PID: 230386   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+sx_open_sim_file_read {test_hspice.tr0}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:test_hspice.tr0(0)} {0} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:test_hspice.tr0(0)} {0} {+sep=@}
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:test_hspice.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:test_hspice.tr0(0)} {0} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:test_hspice.tr0(0)} {0} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:test_hspice.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:test_hspice.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(0)} 1
+wv_select_list_item {Custom WaveView} {} {sigview} {i(vin)} 0
+wv_drag_list_item {Custom WaveView} {} {sigview} {i(vin)} 0
+wv_drag_enter WV1
+wv_drag_leave WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(0)} 1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(in)} 2
+wv_select_list_item {Custom WaveView} {} {sigview} {v(out)} 3
+wv_press_tool_button {Custom WaveView} {} {UpdateWave0} 
+wv_press_tool_button {Custom WaveView} {} {UpdateWave0} 
+wv_select_list_item {Custom WaveView} {} {sigview} {v(0)} 1
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(0)} 1
+wv_drag_enter WV1
+wv_drop_on WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(in)} 2
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(in)} 2
+wv_drag_enter WV1
+wv_drag_to WV1 11 197
+wv_drop_on WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(out)} 3
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(out)} 3
+wv_drag_enter WV1
+wv_drag_to WV1 22 206
+wv_drop_on WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {i(vin)} 0
+wv_drag_list_item {Custom WaveView} {} {sigview} {i(vin)} 0
+wv_drag_enter WV1
+wv_drag_to WV1 14 183
+wv_drop_on WV1
+wv_select_combox_item {Custom WaveView} {} {SignalType} "Voltage" 1
+wv_press_tool_button {Custom WaveView} {} {UpdateWave0} 
+wv_select_combox_item {Custom WaveView} {} {SignalType} "All" 0
+wv_press_tool_button {Custom WaveView} {} {NewWaveView0} 
+wv_press_tool_button {Custom WaveView} {waveview 2:2} {Waveview.CloseBtn} 
+wv_move_window {Confirmation} {} 496 261
+wv_move_window {Confirmation} {} 506 264
+wv_select_dialog {Confirmation} 
+wv_press_button {Confirmation} {} {Ok} 
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Panel Selection} 
+wv_close_window {Custom WaveView} 
+wv_move_window {Confirmation} {} 502 261
+wv_move_window {Confirmation} {} 512 264
+wv_select_dialog {Confirmation} 
+#wv_press_button {Confirmation} {} {Ok} 

@@ -1,0 +1,67 @@
+****** PrimeSim HSPICE -- U-2023.03-SP2 linux64 (Aug 24 2023 8388748) ******
+Input File: pmos
+lic:
+lic: FLEXlm: SDK_12.11.9.1
+lic: USER:   Leiva_Solano_I_2024_vlsi HOSTNAME: redhat003
+lic: HOSTID: 7f0100               PID:      397321
+lic: Using FLEXlm license file:
+lic: 27000@172.21.9.211
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 22-oct-2024/2023.03
+lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27000@172.21.9.211
+lic:
+
+ init: begin read circuit files, cpu clock= 4.83E-02
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/ad
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/behave
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/bjt
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/burr_brn
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/comlinear
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/dio
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/fet
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/lin_tech
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/pci
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/signet
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/ti
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/tline
+       option search = /mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/parts/xilinx
+       option post
+ init: end read circuit files, cpu clock= 4.92E-02 peak memory=     511 mb
+ init: begin check errors, cpu clock= 4.92E-02
+ init: end check errors, cpu clock= 5.07E-02 peak memory=     511 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 5.07E-02
+       establish matrix -- done, cpu clock= 5.08E-02 peak memory=     511 mb
+       re-order matrix -- done, cpu clock= 5.08E-02 peak memory=     511 mb
+ init: end setup matrix, cpu clock= 5.10E-02 peak memory=     511 mb
+ sweep: voltage         voltage1         begin, #sweeps =   7
+ voltage: vgs             =   -1.80E+00
+ output: pmos.sw
+ sweep: dc dc1    begin, #sweeps=  37 cpu clock= 5.34E-02
+ sweep: dc dc1    end, cpu clock= 5.45E-02 peak memory=     511 mb
+ voltage: vgs             =   -1.50E+00
+ output: pmos.sw0
+ sweep: dc dc2    begin, #sweeps=  37 cpu clock= 5.46E-02
+ sweep: dc dc2    end, cpu clock= 5.55E-02 peak memory=     511 mb
+ voltage: vgs             =   -1.20E+00
+ output: pmos.sw0
+ sweep: dc dc3    begin, #sweeps=  37 cpu clock= 5.55E-02
+ sweep: dc dc3    end, cpu clock= 5.64E-02 peak memory=     511 mb
+ voltage: vgs             =   -9.00E-01
+ output: pmos.sw0
+ sweep: dc dc4    begin, #sweeps=  37 cpu clock= 5.65E-02
+ sweep: dc dc4    end, cpu clock= 5.73E-02 peak memory=     511 mb
+ voltage: vgs             =   -6.00E-01
+ output: pmos.sw0
+ sweep: dc dc5    begin, #sweeps=  37 cpu clock= 5.73E-02
+ sweep: dc dc5    end, cpu clock= 5.82E-02 peak memory=     511 mb
+ voltage: vgs             =   -3.00E-01
+ output: pmos.sw0
+ sweep: dc dc6    begin, #sweeps=  37 cpu clock= 5.82E-02
+ sweep: dc dc6    end, cpu clock= 5.91E-02 peak memory=     511 mb
+ voltage: vgs             =    0.00E+00
+ output: pmos.sw0
+ sweep: dc dc7    begin, #sweeps=  37 cpu clock= 5.91E-02
+ sweep: dc dc7    end, cpu clock= 5.99E-02 peak memory=     511 mb
+ sweep: voltage         voltage         1 end
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
