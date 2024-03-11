@@ -125,7 +125,9 @@ X5 e f inv WP='P1' M='H**4'
 ```
 Se ejecuta la simulacion y se obtiene que la mejor relacion PMOS/NMOS es de 4, junto a la siguiente informacion:
 
-![image](https://github.com/Mercurio1509/VLSI_Tarea_1/assets/71583915/585b0d1f-9c04-4d71-9186-b1c5ab50f004)
+![image](https://github.com/Mercurio1509/VLSI_Tarea_1/assets/71583915/0cd9cfc7-546a-4c2e-90a0-3bb3b5c006f4)
+
+
 
 #### Potencia
  Se mide la potencia para las relaciones PMOS/NMOS obtenidas con ambas optimizaciones:
