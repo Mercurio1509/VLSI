@@ -2,6 +2,30 @@
 
 ## Parte 1. Determinación de las resistencias de canal de transistores mínimos NMOS y PMOS para el proceso XH018. Módulo LPMOS: ne, pe (1,8V).
 
+En esta sección calcularemos el valor de la resistencia efectiva para los transistores NMOS y PMOS para el proceso XH018 con una tensión de alimentación de 1.8V. Para el calculo primero debemos localizar ciertos valores en la hoja de datos provista, estos valores son la corriente en high y en low. Comenzamos con el cálculo de la resistencia efectiva para el transistor NMOS que tiene unas corrientes de IH=475uA/um y IL=3pA/um, con estos valores calculamos la corriente efectiva Ieff=(IH+IL)/2 obteniendo un valor de Ieff=237,5uA/um, multiplicamos por el L del transistor que para este caso es de 180nm y obtenemos un nuevo valor de Ieff=42.74uA dejándolo solo en términos de la corriente. Con esto ya tenemos todo lo necesario para calcular la resistencia efectiva con la siguiente fórmula.
+
+$$
+R_{Neff}=\frac{V_{DD}}{2I_{eff}}
+$$
+
+Obtenemos para NMOS un valor de $R_{Neff}=21k \Omega$.
+
+Para el caso del PMOS es seguir los mismos pasos para el NMOS unicamente teniendo en cuenta que los valores para PMOS de IH=170uA/um y IL=3pA/um manteniedo el valor de L=180nm. Al final obtenemos un valor de $R_{Peff}=59k\Omega$.
+
+Para el cálculo de de la resistencia efectiva también está esta otra fórmula $R_{eff}=\frac{3ln(2)}{2}\frac{V_{DD}}{I_{dsat}}$. Ambas fórmulas son aceptables pero para este caso se uso el método recortado ya que es menos engorroso a la hora de calcular $\tau$ ya que de esta manera $\tau=RC$ eliminando de la ecuación el término de ln(2). LA ecuación con el término de ln(2) es util cuando no se quiere que llegar a VDD/2.
+
+Ahora calcularemos las capacitancias equivalentes para el NMOS y el PMOS. De igual manera vamos a la hoja de datos para el cálculo de las capacitancias. Para esto usamos la siguiente ecuación:
+
+$$
+C_{gs}=W_{dib}L_{dib}C_{ox}+W_{dib}C_{ov}
+$$
+
+Empezando por el caso del NMOS tenemos un valor de $W_{dib}=0.22um$, de $L_{dib}=0.17um$, la capacitancia del óxido a 1,8V es $C_{ox}=8.46fF/um^2$ y por ultimo el valor de la capacitancia de traslape es de $C_{ov}=0.33fF/um$. Con esto obtenemos un valor de $C_{gs}=0.389fF$.
+
+Para el transistor PMOS hacemos lo mismo que para el NMOS viendo la hoja de datos obtenemos que $C_{gs}=0.404fF$
+
+Con este valor podemos calcular la constante RC, para NMOS $\tau=8.16E-12 s$, para PMOS $\tau=23.8E-12 s$
+
 ## Parte 2. Diseño de un inversor mínimo de tamaño óptimo
 ### Parte 2.B
 
