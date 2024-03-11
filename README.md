@@ -164,6 +164,32 @@ Para escoger cual de las 2 soluciones es mas deseable es necesario tener muy en 
 
 La relacion obtenida de manera automatica tiene una menor diferencia entre el tpdr y tpdf, por lo cual el retardo de cuando la compuerta conmuta de 0 a 1 es casi igual que cuando esta conmuta de 1 a 0, ademas tambien posee la ventaja de presentar un menor consumo de potencia en comparacion a la solucion obtenida de manera manual.
 
+
 En conclusion, para escoger una solucion se debe decidir que es preferible, si se necesita la compuerta de menor area y menor retardo de propagacion, la relacion 2.4/1 obtenida a mano es mejor. Mientras que si desean tpdf y tpdr lo mas iguales posibles y un menor consumo de potencia, es mejor la relacion 4/1 obtenida de manera automatica con Hspice.
 
+## Parte 2.C
+
+Para esta parte debemos usar el mismo tamaño de transistores que para las secciones anteriores que es un W=220nm para NMOS y W=440nm para PMOS, para ambos casos tenemos un L=180nm. Para esta sección haremos uso de las siguientes ecuaciones para el tiempo de fall and rise.
+
+$$
+\Delta t_{pdr}=\frac{3}{2}R_{p}C
+$$
+
+$$
+\Delta t_{pdf}=3R_{n}C
+$$
+
+Para el cálculo de estas ecuaciones y obtener el valor de la resistencia efectiva para PMOS y NMOS necesitamos el valor de $\Delta t_{pdf}$ y $\Delta t_{pdr}$ para esto haremos uso de los valores de h para el fan-out, para este caso usamos el valor de h=3 y h=4, apoyándonos de la simulación en Hspice obtenemos que los valores para h=4 son $t_{pdf}=7,666E-11$ y $t_{pdr}=1.169E-10$. Para h=3 corremos la simulación y obtenemos los siguientes valores $t_{pdr}=9.443E-11$ y $t_{pdf}=6.297E-11$. Ahora podemos calcular los valores de los deltas para lo que obtenemos lo siguiente:
+
+$$
+\Delta t_{pdr}=2.247E-11\; s
+$$
+
+$$
+\Delta t_{pdf}=1.369E-11\; s
+$$
+
+Ahora cumpliendo con las ecuaciones planteadas al inicio de esta sección, usando los valores de capacitancia obtenidos en la parte 1 de este documento obtenemos que para la resistencia efectiva para NMOS es de $R_{n}=11730 \Omega \approx 12k\Omega$. El valor para PMOS es de $R_{p}=37079\Omega\approx37k\Omega$.
+
+Teniendo cuenta la diferencia que hay consideramos que es más acertado guiarse por los datos obtenidos en esta sección ya que poseemos más información de los tiempos de levantamiento y de caída gracias a los modelos de SPICE que utilizamos. 
 
