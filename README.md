@@ -37,7 +37,7 @@ Con este valor podemos calcular la constante RC, para NMOS $\tau=8.16E-12 s$, pa
 
 #### Esquinas de variabilidad
 
-PAra hacer un analisis de las esquinas de variabilidad del inversor diseñado, se toma el archivo spice generado para el inversor y se edita las ultimas siglas de la siguiente linea:
+Para hacer un analisis de las esquinas de variabilidad del inversor diseñado, se toma el archivo spice generado para el inversor y se edita las ultimas siglas de la siguiente linea:
 
 ```
 .lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Sulecio_Hidalgo_I_2024_vlsi/tarea1/Hspice/lp5mos/xt018.lib' tm
