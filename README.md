@@ -24,7 +24,13 @@ Empezando por el caso del NMOS tenemos un valor de $W_{dib}=0.22um$, de $L_{dib}
 
 Para el transistor PMOS hacemos lo mismo que para el NMOS viendo la hoja de datos obtenemos que $C_{gs}=0.404fF$
 
-Con este valor podemos calcular la constante RC, para NMOS $\tau=8.16E-12 s$, para PMOS $\tau=23.8E-12 s$
+Con este valor podemos calcular la constante RC, para NMOS $\tau=8.16E-12 s$, para PMOS $\tau=23.8E-12 s$. A continuación se le muestra una tabla resumen con los resultados.
+
+| Parámetro| NMOS       | PMOS      |
+| -------- | ----       | ----      |
+| $C_{gs}$ |$0,389 fF$  |$0,404fF$  |
+| $R_{eff}$|$21k\Omega$ |$59k\Omega$|
+| $\tau$   |$8,16E-12 s$|$23.8E-12s$|
 
 ## Parte 2. Diseño de un inversor mínimo de tamaño óptimo
 
