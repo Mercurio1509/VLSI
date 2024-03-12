@@ -226,17 +226,17 @@ $$
 \Delta t_{pdf}=3R_{n}C
 $$
 
-Para el cálculo de estas ecuaciones y obtener el valor de la resistencia efectiva para PMOS y NMOS necesitamos el valor de $\Delta t_{pdf}$ y $\Delta t_{pdr}$ para esto haremos uso de los valores de h para el fan-out, para este caso usamos el valor de h=3 y h=4, apoyándonos de la simulación en Hspice obtenemos que los valores para h=4 son $t_{pdf}=7,666E-11$ y $t_{pdr}=1.169E-10$. Para h=3 corremos la simulación y obtenemos los siguientes valores $t_{pdr}=9.443E-11$ y $t_{pdf}=6.297E-11$. Ahora podemos calcular los valores de los deltas para lo que obtenemos lo siguiente:
+Para el cálculo de estas ecuaciones y obtener el valor de la resistencia efectiva para PMOS y NMOS necesitamos el valor de $\Delta t_{pdf}$ y $\Delta t_{pdr}$ para esto haremos uso de los valores de h para el fan-out, para este caso usamos el valor de h=3 y h=4, apoyándonos de la simulación en Hspice obtenemos que los valores para h=4 son $t_{pdf}=7,93E-11$ y $t_{pdr}=1.12E-10$. Para h=3 corremos la simulación y obtenemos los siguientes valores $t_{pdr}=9.15E-11$ y $t_{pdf}=6.58E-11$. Ahora podemos calcular los valores de los deltas para lo que obtenemos lo siguiente:
 
 $$
-\Delta t_{pdr}=2.247E-11\; s
+\Delta t_{pdr}=2.078E-11\; s
 $$
 
 $$
-\Delta t_{pdf}=1.369E-11\; s
+\Delta t_{pdf}=1.35E-11\; s
 $$
 
-Ahora cumpliendo con las ecuaciones planteadas al inicio de esta sección, usando los valores de capacitancia obtenidos en la parte 1 de este documento obtenemos que para la resistencia efectiva para NMOS es de $R_{n}=11730 \Omega \approx 12k\Omega$. El valor para PMOS es de $R_{p}=37079\Omega\approx37k\Omega$.
+Ahora cumpliendo con las ecuaciones planteadas al inicio de esta sección, usando los valores de capacitancia obtenidos en la parte 1 de este documento obtenemos que para la resistencia efectiva para NMOS es de $R_{n}=11542 \Omega \approx 11.5k\Omega$. El valor para PMOS es de $R_{p}=34290\Omega\approx34k\Omega$.
 
 Teniendo cuenta la diferencia que hay consideramos que es más acertado guiarse por los datos obtenidos en esta sección ya que poseemos más información de los tiempos de levantamiento y de caída gracias a los modelos de SPICE que utilizamos. 
 
