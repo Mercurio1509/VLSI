@@ -1,7 +1,7 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "U-2023.03-SP2 linux64"
 * "format" "HSP"
-* "rundate" "00:21:16 03/11/2024 "
+* "rundate" "00:53:33 03/12/2024 "
 * "netlist" "inversor_b "
 * "runtitle" "*----------------------------------------------------------------------"
 * time =    0.            
@@ -12,9 +12,9 @@
 .nodeset
 + a =   0.            
 + b =   1.8000        
-+ c =   5.2523n       
++ c =   5.3135n       
 + d =   1.8000        
-+ e =   5.2523n       
++ e =   5.3135n       
 + f =   1.8000        
 + vdd =   1.8000        
 ***   END: Saved Operating Point ***                     
