@@ -41,13 +41,19 @@ Para esta parte se creó un esquemático con Custom Compiler.
 
 Usando el Spice Deck encontramos los valores de $I_{ds}$ vs $V_{ds}$ variando el valor de $V_{gs}$ para los transistores NMOS y PMOS. Para NMOS se usó W=220nm y para PMOS W=440nm, ambos con L=180nm. Graficando el barrido en DC obtenemos lo siguiente:
 
-![NMOS](https://hackmd.io/_uploads/r1_e2raTa.png)
 
-![PMOS](https://hackmd.io/_uploads/HJCz3BTTa.png)
+![NMOS](https://github.com/Mercurio1509/VLSI_Tarea_1/assets/125401207/26dbb175-8dc7-4076-8cd4-c39c4e82d426)
+
+
+
+![PMOS](https://github.com/Mercurio1509/VLSI_Tarea_1/assets/125401207/080d10c7-beac-4b06-80be-8813d2355641)
+
 
 Además se realizó un análisis transitorio para el inversor donde se logra observar la conmutación del inversor, para esto usamos los valores anteriores para NMOS y PMOS.
 
-![inversor](https://hackmd.io/_uploads/ByH96Sp6p.png)
+
+![inversor](https://github.com/Mercurio1509/VLSI_Tarea_1/assets/125401207/3f0e32af-1bc6-4bce-bd70-15080e905c5f)
+
 
 #### Esquinas de variabilidad
 
