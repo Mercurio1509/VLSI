@@ -70,7 +70,13 @@ Para hacer un analisis de las esquinas de variabilidad del inversor diseñado, s
 ```
 Se cambia el "tm" por wp(FF), ws(SS), wo(FS) y wz(SF), ademas se generan las mediciones de potencia y retardos, con lo cual se obtienen los siguientes resultados:
 
-![image](https://github.com/Mercurio1509/VLSI_Tarea_1/assets/71583915/37ce6fd0-00b1-4b14-8267-4ef20059ea4b)
+|Esquinas de variabilidad| | | | | |
+|:----|:----|:----|:----|:----|:----|
+|Esquina|Potencia(W)|tpdr(s)|tpdf(s)|tpd(s)|diff(s)|
+|SS|1.291E-06|5.155E-11|3.274E-11|4.21E-11|1.88E-11|
+|FF|1.068E-06|3.514E-11|1.463E-11|2.49E-11|2.05E-11|
+|FS|1.130E-06|4.664E-11|1.831E-11|3.25E-11|2.83E-11|
+|SF|1.235E-06|4.220E-11|3.063E-11|3.64E-11|1.16E-11|
 
 
 ![image](https://github.com/Mercurio1509/VLSI_Tarea_1/assets/71583915/19fd0255-b61d-4580-ad23-9cfb956a1856)
@@ -228,14 +234,25 @@ X5 e f inv WP='P1' M='H**4'
 ```
 Se ejecuta la simulacion y se obtiene que la mejor relacion PMOS/NMOS es de 4, junto a la siguiente informacion:
 
-![image](https://github.com/Mercurio1509/VLSI_Tarea_1/assets/71583915/0cd9cfc7-546a-4c2e-90a0-3bb3b5c006f4)
+|Optimizacion| | | | |
+|:----|:----|:----|:----|:----|
+|PMOS/NMOS|tpdr(s)|tpdf(s)|tpd(s)|diff(s)|
+|4|1.155E-10|9.47E-11|1.051E-10|2.080E-11|
 
 
 
 #### Potencia
  Se mide la potencia para las relaciones PMOS/NMOS obtenidas con ambas optimizaciones:
  
- ![image](https://github.com/Mercurio1509/VLSI_Tarea_1/assets/71583915/aaf328f9-1c03-4f3e-a8fa-eadab5952bf8)
+|Optimizacion Hspice| |
+|:----|:----|
+|PMOS/NMOS|4|
+|Potencia Promedio|0.1276mW|
+
+|Optimizacion a mano| |
+|:----|:----|
+|PMOS/NMOS|2.40|
+|Potencia Promedio|0.9290mW|
 
 
 #### Comparación de resultados
