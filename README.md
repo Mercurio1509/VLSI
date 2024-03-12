@@ -27,6 +27,31 @@ Para el transistor PMOS hacemos lo mismo que para el NMOS viendo la hoja de dato
 Con este valor podemos calcular la constante RC, para NMOS $\tau=8.16E-12 s$, para PMOS $\tau=23.8E-12 s$
 
 ## Parte 2. Diseño de un inversor mínimo de tamaño óptimo
+
+### Parte 2.A
+Para esta parte se creó un esquemático con Custom Compiler.
+
+#### Diseño de inversor esquemático
+
+#### Simulaciones NMOS, PMOS e inversor
+
+Usando el Spice Deck encontramos los valores de $I_{ds}$ vs $V_{ds}$ variando el valor de $V_{gs}$ para los transistores NMOS y PMOS. Para NMOS se usó W=220nm y para PMOS W=440nm, ambos con L=180nm. Graficando el barrido en DC obtenemos lo siguiente:
+
+![NMOS](https://hackmd.io/_uploads/r1_e2raTa.png)
+
+![PMOS](https://hackmd.io/_uploads/HJCz3BTTa.png)
+
+Además se realizó un análisis transitorio para el inversor donde se logra observar la conmutación del inversor, para esto usamos los valores anteriores para NMOS y PMOS.
+
+![inversor](https://hackmd.io/_uploads/ByH96Sp6p.png)
+
+#### Simulación de las esquinas
+
+
+
+
+
+
 ### Parte 2.B
 
 #### Optimizacion manual
