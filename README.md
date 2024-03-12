@@ -28,6 +28,25 @@ Con este valor podemos calcular la constante RC, para NMOS $\tau=8.16E-12 s$, pa
 
 ## Parte 2. Diseño de un inversor mínimo de tamaño óptimo
 
+#### Esquematico del inversor
+
+![Imagen de WhatsApp 2024-03-11 a las 22 53 41_6137f1e8](https://github.com/Mercurio1509/VLSI_Tarea_1/assets/71583915/5ea42dd1-c0b7-4dd1-9e54-a3a2acb24915)
+
+
+#### Esquinas de variabilidad
+
+Para hacer un analisis de las esquinas de variabilidad del inversor diseñado, se toma el archivo spice generado para el inversor y se edita las ultimas siglas de la siguiente linea:
+
+```
+.lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Sulecio_Hidalgo_I_2024_vlsi/tarea1/Hspice/lp5mos/xt018.lib' tm
+```
+Se cambia el "tm" por wp(FF), ws(SS), wo(FS) y wz(SF), ademas se generan las mediciones de potencia y retardos, con lo cual se obtienen los siguientes resultados:
+
+![image](https://github.com/Mercurio1509/VLSI_Tarea_1/assets/71583915/37ce6fd0-00b1-4b14-8267-4ef20059ea4b)
+
+
+![image](https://github.com/Mercurio1509/VLSI_Tarea_1/assets/71583915/19fd0255-b61d-4580-ad23-9cfb956a1856)
+
 ### Parte 2.A
 Para esta parte se creó un esquemático con Custom Compiler.
 
