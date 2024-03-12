@@ -247,21 +247,22 @@ Se ejecuta la simulacion y se obtiene que la mejor relacion PMOS/NMOS es de 4, j
 |Optimizacion Hspice| |
 |:----|:----|
 |PMOS/NMOS|4|
-|Potencia Promedio|0.1276mW|
+|Potencia Promedio|1.2763 mW|
 
 |Optimizacion a mano| |
 |:----|:----|
 |PMOS/NMOS|2.40|
-|Potencia Promedio|0.9290mW|
+|Potencia Promedio|0.9290 mW|
 
 
 #### Comparación de resultados
-Para escoger cual de las 2 soluciones es mas deseable es necesario tener muy en cuenta cuales son los requisitos de diseño. La optimizacion a mano tiene un area menor debido en comparacion a la optimizacion automatica, esto debido a que el ancho del PMOS es 2.4 veces mas grande que el NMOS, a diferencia del otro caso donde es 4 veces mas ancho que el NMOS. Esta optimizacion tambien tiene un menor retardo tpd, por lo cual en promedio el retardo de proparacion es menor para esta optimizacion. 
+Para escoger cual de las 2 soluciones es mas deseable es necesario tener muy en cuenta cuales son los requisitos de diseño. La optimizacion a mano tiene un area menor en comparacion a la optimizacion automatica, esto debido a que el ancho del PMOS es 2.4 veces mas grande que el NMOS, a diferencia del otro caso donde es 4 veces mas ancho que el NMOS. Esta optimizacion tambien tiene un menor retardo tpd, por lo cual en promedio el retardo de proparacion es menor para esta optimizacion. 
+Finalmente, la relacion 2.4/1 tambien tiene un menor consumo de potencia promedio en comparacion con la relacion obtenida mediante Hspice.
 
-La relacion obtenida de manera automatica tiene una menor diferencia entre el tpdr y tpdf, por lo cual el retardo de cuando la compuerta conmuta de 0 a 1 es casi igual que cuando esta conmuta de 1 a 0, ademas tambien posee la ventaja de presentar un menor consumo de potencia en comparacion a la solucion obtenida de manera manual.
+La relacion obtenida de manera automatica tiene una menor diferencia entre el tpdr y tpdf, por lo cual el retardo de cuando la compuerta conmuta de 0 a 1 es casi igual que cuando esta conmuta de 1 a 0, son casi simetricos. Lastimosanente la relacion 4/1 posee un mayor consumo de potencia, una mayor area y ademas el retardo de propagacion promedio es ligeeramente mayor.
 
 
-En conclusion, para escoger una solucion se debe decidir que es preferible, si se necesita la compuerta de menor area y menor retardo de propagacion, la relacion 2.4/1 obtenida a mano es mejor. Mientras que si desean tpdf y tpdr lo mas iguales posibles y un menor consumo de potencia, es mejor la relacion 4/1 obtenida de manera automatica con Hspice.
+En conclusion, para escoger una solucion se debe decidir que es preferible, si se necesita la compuerta de menor area, menor retardo de propagacion y menor consumo de potencia, la relacion 2.4/1 obtenida a mano es mejor. Mientras que si desean tpdf y tpdr lo mas iguales posibles , es mejor la relacion 4/1 obtenida de manera automatica con Hspice.
 
 ## Parte 2.C
 
