@@ -132,8 +132,34 @@ X5 e f inv M='H**4'
 ```
 Se establecio el parametro F, el cual multiplica el ancho del transistor PMOS para asi variar la relacion PMOS/NMOS. De esta manera se ejecutan multiples simulaciones con distintas variaciones y se miden los retardos tpdr, tpdf y tpd para cada una de estas. Con lo cual se obtienen los siguientes resultados:
 
-![image](https://github.com/Mercurio1509/VLSI_Tarea_1/assets/71583915/0c675cb3-c537-4926-a56e-da6aca490c88)
-
+| PMOS/NMOS | tpdr(s)    | tpdf(s)    | tpd(s)     | diff(s)    |
+| --------- | ---------- | ---------- | ---------- | ---------- |
+| 1         | 1.3230E-10 | 7.4810E-11 | 1.0356E-10 | 5.7490E-11 |
+| 1.2       | 1.3330E-10 | 6.8890E-11 | 1.0110E-10 | 6.4410E-11 |
+| 1.4       | 1.2840E-10 | 7.0940E-11 | 9.9670E-11 | 5.7460E-11 |
+| 1.6       | 1.2360E-10 | 7.2750E-11 | 9.8175E-11 | 5.0850E-11 |
+| 1.8       | 1.1990E-10 | 7.6420E-11 | 9.8160E-11 | 4.3480E-11 |
+| 2         | 1.1690E-10 | 7.6660E-11 | 9.6780E-11 | 4.0240E-11 |
+| 2.2       | 1.1490E-10 | 7.7540E-11 | 9.6220E-11 | 3.7360E-11 |
+| 2.4       | 1.1230E-10 | 7.9290E-11 | 9.5795E-11 | 3.3010E-11 |
+| 2.6       | 1.1240E-10 | 8.1100E-11 | 9.6750E-11 | 3.1300E-11 |
+| 2.8       | 1.1130E-10 | 8.2970E-11 | 9.7135E-11 | 2.8330E-11 |
+| 3         | 1.1090E-10 | 8.4910E-11 | 9.7905E-11 | 2.5990E-11 |
+| 3.2       | 1.0960E-10 | 8.6920E-11 | 9.8260E-11 | 2.2680E-11 |
+| 3.4       | 1.1050E-10 | 8.8880E-11 | 9.9690E-11 | 2.1620E-11 |
+| 3.6       | 1.1040E-10 | 9.0900E-11 | 1.0065E-10 | 1.9500E-11 |
+| 3.8       | 1.1080E-10 | 9.2830E-11 | 1.0182E-10 | 1.7970E-11 |
+| 4         | 1.1110E-10 | 9.4770E-11 | 1.0294E-10 | 1.6330E-11 |
+| 4.2       | 1.1130E-10 | 9.6560E-11 | 1.0393E-10 | 1.4740E-11 |
+| 4.4       | 1.1190E-10 | 9.8570E-11 | 1.0524E-10 | 1.3330E-11 |
+| 4.6       | 1.1240E-10 | 1.0060E-10 | 1.0650E-10 | 1.1800E-11 |
+| 4.8       | 1.1350E-10 | 1.0250E-10 | 1.0800E-10 | 1.1000E-11 |
+| 5         | 1.1300E-10 | 1.0420E-10 | 1.0860E-10 | 8.8000E-12 |
+| 5.2       | 1.1360E-10 | 1.0610E-10 | 1.0985E-10 | 7.5000E-12 |
+| 5.4       | 1.1420E-10 | 1.0850E-10 | 1.1135E-10 | 5.7000E-12 |
+| 5.6       | 1.1450E-10 | 1.1150E-10 | 1.1300E-10 | 3.0000E-12 |
+| 5.8       | 1.1550E-10 | 1.1360E-10 | 1.1455E-10 | 1.9000E-12 |
+| 6         | 1.1600E-10 | 1.1570E-10 | 1.1585E-10 | 3.0000E-13 |
 
 
 ![image](https://github.com/Mercurio1509/VLSI_Tarea_1/assets/71583915/ee100e6a-5a06-4931-8936-dd97a02590ec)
@@ -141,7 +167,7 @@ Se establecio el parametro F, el cual multiplica el ancho del transistor PMOS pa
 
 
 
-Con lo cual se obtiene que la relacion con el menor tiempo de retardo y menor diferencia de tpdf y tpdr se obtiene cuando  la relacion PMOS/NMOS es de 2.4/1.
+Con lo cual se obtiene que la relacion con el menor tiempo de retardo y menor diferencia de tpdf y tpdr se alcanza cuando  la relacion PMOS/NMOS es de 2.4/1.
 
 #### Optimizacion automatica
 Despues, se realiza una optimizacion automatizada utilizando Hspice, para esto se utiliza el siguiente deck, el cual se encuentra como "inversor_b2":
