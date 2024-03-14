@@ -8,9 +8,9 @@ $$
 R_{Neff}=\frac{V_{DD}}{2I_{eff}}
 $$
 
-Obtenemos para NMOS un valor de $R_{N}=21k \Omega$. Para obtener el vlaor de la resistencia efectiva finalmente multiplicamos ese valor por el W de nuestro transistor NMOS el cual es de 0,22nm dando como resultado $R_{Neff}=4620k\Omegaum$
+Obtenemos para NMOS un valor de $R_{N}=21k \Omega$. Para obtener el vlaor de la resistencia efectiva finalmente multiplicamos ese valor por el W de nuestro transistor NMOS el cual es de 0,22nm dando como resultado $R_{Neff}=4620k\Omega um$
 
-Para el caso del PMOS es seguir los mismos pasos para el NMOS unicamente teniendo en cuenta que los valores para PMOS de IH=170uA/um y IL=3pA/um manteniedo el valor de L=180nm. Al final obtenemos un valor de $R_{P}=59k\Omega$. Aplicamos lo mismo y multiplicamos por el W del transistor PMOS y obtenemos que $R_{Peff}=26k\Omegaum$
+Para el caso del PMOS es seguir los mismos pasos para el NMOS unicamente teniendo en cuenta que los valores para PMOS de IH=170uA/um y IL=3pA/um manteniedo el valor de L=180nm. Al final obtenemos un valor de $R_{P}=59k\Omega$. Aplicamos lo mismo y multiplicamos por el W del transistor PMOS y obtenemos que $R_{Peff}=26k\Omega um$
 
 Para el cálculo de de la resistencia efectiva también está esta otra fórmula $R_{eff}=\frac{3ln(2)}{2}\frac{V_{DD}}{I_{dsat}}$. Ambas fórmulas son aceptables pero para este caso se uso el método recortado ya que es menos engorroso a la hora de calcular $\tau$ ya que de esta manera $\tau=RC$ eliminando de la ecuación el término de ln(2). LA ecuación con el término de ln(2) es util cuando no se quiere que llegar a VDD/2.
 
