@@ -1,4 +1,5 @@
-
+Moisés Leiva Solano
+Luis Carlos Sulecio
 
 ## Parte 1. Determinación de las resistencias de canal de transistores mínimos NMOS y PMOS para el proceso XH018. Módulo LPMOS: ne, pe (1,8V).
 
