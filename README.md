@@ -9,7 +9,7 @@ $$
 R_{Neff}=\frac{V_{DD}}{2I_{eff}}
 $$
 
-Obtenemos para NMOS un valor de $R_{N}=21k \Omega$. Para obtener el vlaor de la resistencia efectiva finalmente multiplicamos ese valor por el W de nuestro transistor NMOS el cual es de 0,22nm dando como resultado $R_{Neff}=4620k\Omega um$
+Obtenemos para NMOS un valor de $R_{N}=21k \Omega$. Para obtener el vlaor de la resistencia efectiva finalmente multiplicamos ese valor por el W de nuestro transistor NMOS el cual es de 0,22nm dando como resultado $R_{Neff}=4620\Omega um$
 
 Para el caso del PMOS es seguir los mismos pasos para el NMOS unicamente teniendo en cuenta que los valores para PMOS de IH=170uA/um y IL=3pA/um manteniedo el valor de L=180nm. Al final obtenemos un valor de $R_{P}=59k\Omega$. Aplicamos lo mismo y multiplicamos por el W del transistor PMOS y obtenemos que $R_{Peff}=26k\Omega um$
 
@@ -30,7 +30,7 @@ Con este valor podemos calcular la constante RC, para NMOS $\tau=24.48E-12 s$, p
 | Parámetro| NMOS       | PMOS      |
 | -------- | ----       | ----      |
 | $C_{gs}$ |$0,389 fF$  |$0,404fF$  |
-| $R_{eff}$|$4620\Omega um$ |$26kk\Omega um$|
+| $R_{eff}$|$4620\Omega um$ |$26k\Omega um$|
 | $\tau$   |$24.48E-12 s$|$71.4E-12s$|
 
 ## Parte 2. Diseño de un inversor mínimo de tamaño óptimo
